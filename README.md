@@ -3,7 +3,7 @@ A example of a decentralized app that utilizes a smart contract to transfer fund
 
 ## Setup
 
-Make sure you have [Node](https://nodejs.org) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed.
+Make sure you have [Node](https://nodejs.org), the [Metamask](https://metamask.io/) extension, and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed.
 
 1. Clone the repo
 
@@ -34,6 +34,11 @@ $ npm run blockchain
 
 ```
 $ npm run migrate
+```
+6. Start your frontend server
+
+```
+$ npm run start
 ```
 
 Open your browser to http://localhost:3000 to see your local environment!
