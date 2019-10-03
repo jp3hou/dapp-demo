@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Cat = ({ color, id, generation, onClick }) => (
+const Cat = ({ color, id, generation, owner, onClick }) => (
   <Card onClick={() => onClick(id)}>
     <svg version="1" width="120" height="120" viewBox="0 0 100 100">
       <g fill={color}>
@@ -12,6 +12,7 @@ const Cat = ({ color, id, generation, onClick }) => (
     <Description>
       <Name>Kat #{id}</Name>
       <Generation>Generation {generation}</Generation>
+      <Owner>Owner {owner}</Owner>
     </Description>
   </Card>
 );
@@ -38,6 +39,10 @@ const Description = styled.div`
 `;
 
 const Name = styled.span`
+  font-weight: bold;
+`;
+
+const Owner = styled.span`
   font-weight: bold;
 `;
 
