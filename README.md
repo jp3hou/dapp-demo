@@ -1,5 +1,5 @@
 # Dapp Demo
-A example of a decentralized app that utilizes a smart contract to transfer funds
+A example of a decentralized app that utilizes a smart contract to transfer funds ([link to slides with instructions/solutions](https://docs.google.com/presentation/d/15LqMhebc0wOZNEtneU-mZjJ-r1l-Z9bLvIgNk2d8ePU/edit?usp=sharing)).
 
 ## Setup
 
@@ -42,3 +42,21 @@ $ npm run start
 ```
 
 Open your browser to http://localhost:3000 to see your local environment!
+The constructor in the KatCoin.sol contract auto-mints 30 KatCoins and displays them in the frontend React app.
+![Screenshot](/screenshots/kats_home.png?raw=true)
+
+Find the address of your wallet in Metamask:
+![Screenshot](/screenshots/metamask.png?raw=true)
+
+(Click the address to copy it to your clipboard)
+
+Set the default web3 address to your wallet address
+
+```
+$ web3.eth.defaultAccount = "[Your address]"
+```
+
+Click on one of the cats to see the success message! You've successfully purchased one of the KatCoins!
+![Screenshot](/screenshots/successful_purchase.png?raw=true)
+
+![Video demo of importing your local account to Metamask](https://youtu.be/60M7Kq_mrFE)
