@@ -8,12 +8,13 @@ class App extends React.Component {
   constructor() {
     super();
 
-    const Kats = window.web3.eth.contract([
+    const Kats = window.web3.eth.contract(
+      [
 	{
 		"constant": true,
 		"inputs": [
 			{
-				"name": "tokenId",
+				"name": "katId",
 				"type": "uint256"
 			}
 		],
@@ -155,17 +156,18 @@ class App extends React.Component {
 			},
 			{
 				"indexed": false,
-				"name": "tokenId",
+				"name": "katId",
 				"type": "uint256"
 			}
 		],
 		"name": "Sent",
 		"type": "event"
 	}
-]);
+]
+    );
 
     this.state = {
-      kats: Kats.at("0xf48d97D09A2b2e5d1DB300918B4515a129e243d6"),
+      kats: Kats.at("0x4679BC2404d723F49666f4eED727Ff5A170fA1eF"),
       loading: true,
       cats: []
     };
