@@ -42,4 +42,18 @@ $ npm run start
 ```
 
 Open your browser to http://localhost:3000 to see your local environment!
-![Screenshot](/kats_home.png?raw=true)
+The constructor in the KatCoin.sol contract auto-mints 30 KatCoins and displays them in the frontend React app.
+![Screenshot](/screenshots/kats_home.png?raw=true)
+
+Find the address of your wallet in Metamask:
+![Screenshot](/screenshots/metamask.png?raw=true =250x)
+(Click the clipboard icon to copy the address)
+
+Set the default web3 address to your wallet address
+
+```
+$ web3.eth.defaultAccount = "[Your address]"
+```
+
+Click on one of the cats to see the success message! You've successfully purchased one of the KatCoins!
+![Screenshot](/screenshots/successful_purchase.png?raw=true)
