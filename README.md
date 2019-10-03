@@ -42,3 +42,4 @@ $ npm run start
 ```
 
 Open your browser to http://localhost:3000 to see your local environment!
+![Screenshot](/kats_home.png?raw=true)
