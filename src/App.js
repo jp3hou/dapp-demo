@@ -182,8 +182,7 @@ class App extends React.Component {
               {
                 color: `#${cat[0].toString(16).padStart(6, "0")}`,
                 id: i,
-                generation: cat[1].toString(),
-                owner
+                generation: cat[1].toString()
               }
             ]
           }))
@@ -193,7 +192,7 @@ class App extends React.Component {
 
   handlePurchase = id => {
     this.state.kats.purchase(id, (err, result) => {
-      alert("success!");
+      alert('success!');
     });
   };
 
@@ -203,10 +202,7 @@ class App extends React.Component {
       <div>
         <HeaderBar>
           <h1>
-            KatCoins{" "}
-            <span role="img" aria-label="Smiling emoji">
-              😺
-            </span>
+            KatCoins
           </h1>
         </HeaderBar>
         <main>
