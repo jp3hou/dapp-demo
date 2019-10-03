@@ -42,8 +42,7 @@ contract KatCoin is Ownable {
    * @return uint256 representing the amount owned by the passed address
    */
   function balanceOf(address owner) public view returns (uint256) {
-    require(owner != address(0));
-    return _ownedTokensCount[owner];
+    // FILL ME OUT
   }
 
   /**
@@ -52,35 +51,19 @@ contract KatCoin is Ownable {
    * @return owner address currently marked as the owner of the given token ID
    */
   function ownerOf(uint256 tokenId) public view returns (address) {
-    address owner = _tokenOwner[tokenId];
-    require(owner != address(0));
-    return owner;
+    // FILL ME OUT
   }
 
   function getKat(uint256 katId) public view returns (uint32 color, uint16 generation) {
-    Kat storage kat = kats[katId];
-
-    color = kat.color;
-    generation = kat.generation;
+    // FILL ME OUT
   }
 
   function purchase(uint256 katId) public payable {
-    require(katId >= 0);
-    require(katId < 30);
-    require(address(this) == _tokenOwner[katId]);
-    require(msg.value >= 200 finney);
-    _transferFrom(address(this), msg.sender, katId);
-    owner.transfer(msg.value);
+    // FILL ME OUT
   }
 
   function _transferFrom(address from, address to, uint256 tokenId) internal {
-    require(from == _tokenOwner[tokenId]);
-    require(to != address(0));
-
-    _removeTokenFrom(from, tokenId);
-    _addTokenTo(to, tokenId);
-
-    emit Sent(from, to, tokenId);
+    // FILL ME OUT
   }
 
   /**
@@ -90,9 +73,7 @@ contract KatCoin is Ownable {
    * @param tokenId uint256 ID of the token to be minted by the msg.sender
    */
   function _mint(address to, uint256 tokenId, uint256 genes) internal {
-    require(to != address(0));
-    _addTokenTo(to, tokenId);
-    emit Minted(to, tokenId, genes);
+    // FILL ME OUT
   }
 
   /**
@@ -101,9 +82,7 @@ contract KatCoin is Ownable {
    * @param tokenId uint256 ID of the token to be added to the tokens list of the given address
    */
   function _addTokenTo(address to, uint256 tokenId) internal {
-    require(_tokenOwner[tokenId] == address(0));
-    _tokenOwner[tokenId] = to;
-    _ownedTokensCount[to]++;
+    // FILL ME OUT
   }
 
   /**
@@ -112,8 +91,6 @@ contract KatCoin is Ownable {
    * @param tokenId uint256 ID of the token to be removed from the tokens list of the given address
    */
   function _removeTokenFrom(address from, uint256 tokenId) internal {
-    require(ownerOf(tokenId) == from);
-    _ownedTokensCount[from]--;
-    _tokenOwner[tokenId] = address(0);
+    // FILL ME OUT
   }
 }
