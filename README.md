@@ -5,6 +5,11 @@ A example of a decentralized app that utilizes a smart contract to transfer fund
 
 Make sure you have [Node](https://nodejs.org), the [Metamask](https://metamask.io/) extension, and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed.
 
+Set up Metamask by creating a wallet. This should ask you to create a password and keep a mnemonic seed phrase saved. Keep this phrase private for any wallet you'd like to use to handle real funds.
+
+![Screenshot](/screenshots/metamask_welcome.png?raw=true)
+![Screenshot](/screenshots/metamask_mnemonic.png?raw=true)
+
 1. Clone the repo
 
 ```
