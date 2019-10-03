@@ -1,5 +1,5 @@
 # Dapp Demo
-A example of a decentralized app that utilizes a smart contract to transfer funds ([link to slides with instructions/solutions]https://docs.google.com/presentation/d/15LqMhebc0wOZNEtneU-mZjJ-r1l-Z9bLvIgNk2d8ePU/edit?usp=sharing).
+A example of a decentralized app that utilizes a smart contract to transfer funds ([link to slides with instructions/solutions](https://docs.google.com/presentation/d/15LqMhebc0wOZNEtneU-mZjJ-r1l-Z9bLvIgNk2d8ePU/edit?usp=sharing)).
 
 ## Setup
 
