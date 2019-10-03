@@ -46,8 +46,9 @@ The constructor in the KatCoin.sol contract auto-mints 30 KatCoins and displays 
 ![Screenshot](/screenshots/kats_home.png?raw=true)
 
 Find the address of your wallet in Metamask:
-![Screenshot](/screenshots/metamask.png?raw=true =250x)
-(Click the clipboard icon to copy the address)
+![Screenshot](/screenshots/metamask.png?raw=true)
+
+(Click the address to copy it to your clipboard)
 
 Set the default web3 address to your wallet address
 
