@@ -11,8 +11,8 @@ contract KatCoin is Ownable {
   // @dev This event is emitted whenever a new KatCoin is minted
   event Minted(address owner, uint256 katId, uint256 genes);
 
-  // @dev This event is emitted when a token has been sent
-  event Sent(address from, address to, uint256 tokenId);
+  // @dev This event is emitted when a kat has been sent
+  event Sent(address from, address to, uint256 katId);
 
   struct Kat {
     uint32 color;
@@ -21,11 +21,11 @@ contract KatCoin is Ownable {
 
   Kat[] kats;
 
-  // Mapping from token ID to owner
-  mapping (uint256 => address) private _tokenOwner;
+  // Mapping from kat ID to owner
+  mapping (uint256 => address) private _katOwner;
 
   // Mapping from owner to number of owned KatCoins
-  mapping (address => uint256) private _ownedTokensCount;
+  mapping (address => uint256) private _ownedKatsCount;
 
   // Minting 30 KatCoins upon the initialization of this contract
   // (For the purposes of this demonstration only)
@@ -46,11 +46,11 @@ contract KatCoin is Ownable {
   }
 
   /**
-   * @dev Gets the owner of the specified token ID
-   * @param tokenId uint256 ID of the token to query the owner of
-   * @return owner address currently marked as the owner of the given token ID
+   * @dev Gets the owner of the specified kat ID
+   * @param katId uint256 ID of the kat to query the owner of
+   * @return owner address currently marked as the owner of the given kat ID
    */
-  function ownerOf(uint256 tokenId) public view returns (address) {
+  function ownerOf(uint256 katId) public view returns (address) {
     // FILL ME OUT
   }
 
@@ -62,35 +62,35 @@ contract KatCoin is Ownable {
     // FILL ME OUT
   }
 
-  function _transferFrom(address from, address to, uint256 tokenId) internal {
+  function _transferFrom(address from, address to, uint256 katId) internal {
     // FILL ME OUT
   }
 
   /**
-   * @dev Internal function to mint a new token
-   * Reverts if the given token ID already exists
-   * @param to The address that will own the minted token
-   * @param tokenId uint256 ID of the token to be minted by the msg.sender
+   * @dev Internal function to mint a new kat
+   * Reverts if the given kat ID already exists
+   * @param to The address that will own the minted kat
+   * @param katId uint256 ID of the kat to be minted by the msg.sender
    */
-  function _mint(address to, uint256 tokenId, uint256 genes) internal {
+  function _mint(address to, uint256 katId, uint256 genes) internal {
     // FILL ME OUT
   }
 
   /**
-   * @dev Internal function to add a token ID to the list of a given address
-   * @param to address representing the new owner of the given token ID
-   * @param tokenId uint256 ID of the token to be added to the tokens list of the given address
+   * @dev Internal function to add a kat ID to the list of a given address
+   * @param to address representing the new owner of the given kat ID
+   * @param katId uint256 ID of the kat to be added to the kats list of the given address
    */
-  function _addTokenTo(address to, uint256 tokenId) internal {
+  function _addKatTo(address to, uint256 katId) internal {
     // FILL ME OUT
   }
 
   /**
-   * @dev Internal function to remove a token ID from the list of a given address
-   * @param from address representing the previous owner of the given token ID
-   * @param tokenId uint256 ID of the token to be removed from the tokens list of the given address
+   * @dev Internal function to remove a kat ID from the list of a given address
+   * @param from address representing the previous owner of the given kat ID
+   * @param katId uint256 ID of the kat to be removed from the kats list of the given address
    */
-  function _removeTokenFrom(address from, uint256 tokenId) internal {
+  function _removeKatFrom(address from, uint256 katId) internal {
     // FILL ME OUT
   }
 }
