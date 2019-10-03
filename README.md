@@ -58,3 +58,5 @@ $ web3.eth.defaultAccount = "[Your address]"
 
 Click on one of the cats to see the success message! You've successfully purchased one of the KatCoins!
 ![Screenshot](/screenshots/successful_purchase.png?raw=true)
+
+![Video demo of importing your local account to Metamask](https://youtu.be/60M7Kq_mrFE)
