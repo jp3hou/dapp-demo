@@ -17,10 +17,11 @@
  * phrase from a file you've .gitignored so it doesn't accidentally become public.
  *
  */
-
+const path = require("path");
  module.exports = {
    // See <http://truffleframework.com/docs/advanced/configuration>
    // to customize your Truffle configuration!
+   contracts_build_directory: path.join(__dirname, "src/contracts"),
    compilers: {
      solc: {
        version: "^0.4.24"
