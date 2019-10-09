@@ -68,7 +68,6 @@ contract KatCoin is Ownable {
     require(katId >= 0);
     require(katId < 30);
     require(address(this) == _katOwner[katId]);
-    require(msg.value >= 200 finney);
     _transferFrom(address(this), msg.sender, katId);
     owner.transfer(msg.value);
   }

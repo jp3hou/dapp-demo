@@ -167,7 +167,7 @@ class App extends React.Component {
     );
 
     this.state = {
-      kats: Kats.at("0x4679BC2404d723F49666f4eED727Ff5A170fA1eF"),
+      kats: Kats.at("0x8d37b292DE9c41c7A9969461718b1cA8008F421f"),
       loading: true,
       cats: []
     };
@@ -184,7 +184,8 @@ class App extends React.Component {
               {
                 color: `#${cat[0].toString(16).padStart(6, "0")}`,
                 id: i,
-                generation: cat[1].toString()
+                generation: cat[1].toString(),
+                owner: owner
               }
             ]
           }))
