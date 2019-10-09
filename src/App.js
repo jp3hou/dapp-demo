@@ -185,7 +185,8 @@ class App extends React.Component {
               {
                 color: `#${cat[0].toString(16).padStart(6, "0")}`,
                 id: i,
-                generation: cat[1].toString()
+                generation: cat[1].toString(),
+                owner: owner
               }
             ]
           }))

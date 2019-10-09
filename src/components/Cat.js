@@ -7,8 +7,7 @@ const Cat = ({ color, id, generation, owner, onClick }) => (
   <CatSVG width="120" height="120" style={{ fill: `${color}`}}/>
     <Description>
       <Name>Kat #{id}</Name>
-      <Generation>Generation {generation}</Generation>
-      <Owner>Owner {owner}</Owner>
+      <Owner>Owner: {owner}</Owner>
     </Description>
   </Card>
 );
