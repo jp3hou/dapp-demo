@@ -45,9 +45,4 @@ Open your browser to http://localhost:3000 to see your local environment!
 The constructor in the KatCoin.sol contract auto-mints 30 KatCoins and displays them in the frontend React app.
 ![Screenshot](/screenshots/kats_home.png?raw=true)
 
-Click on one of the kats in order to initiate a purchase. Open your Metamask extension to see it ask for confirmation to initiate this transaction.
-![Screenshot](/screenshots/confirm_metamask_transaction.png?raw=true)
-
-
-Click on one of the cats to see the success message! You've successfully purchased one of the KatCoins!
-![Screenshot](/screenshots/successful_purchase.png?raw=true)
+![Video demonstration of a KatCoin purchase](https://youtu.be/9ASbelpozfA)
