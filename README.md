@@ -45,4 +45,6 @@ Open your browser to http://localhost:3000 to see your local environment!
 The constructor in the KatCoin.sol contract auto-mints 30 KatCoins and displays them in the frontend React app.
 ![Screenshot](/screenshots/kats_home.png?raw=true)
 
-![Video demonstration of a KatCoin purchase](https://youtu.be/9ASbelpozfA)
+Video demonstration of a KatCoin purchase:
+
+<a href="https://youtu.be/9ASbelpozfA" target="_blank"><img src="http://img.youtube.com/vi/9ASbelpozfA/0.jpg" width="240" height="180" border="10" /></a>
